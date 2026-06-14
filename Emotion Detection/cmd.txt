@@ -1,0 +1,7 @@
+cd "E:\Emotion Detection\Emotion Detection\"
+
+streamlit_env\Scripts\activate
+
+streamlit run app-cloud.py
+
+streamlit run app-local.py

@@ -1,0 +1,39 @@
+o EMOTION DETECTION: Dependency Lock File
+
+o Python Target Environment: 3.10.11
+o Core Deep Learning Framework
+o Locked to 2.10.0 for native Windows GPU (CUDA/cuDNN) support without WSL2 overhead.
+o tensorflow==2.10.0
+
+o Frontend UI / Deployment
+o Locked to 1.22.0 to prevent severe dependency clashes with TensorFlow's backend.
+o streamlit==1.22.0
+
+o Data Serialization (CRITICAL LOCK)
+o Must remain strictly below 3.20 to satisfy TF 2.10 and prevent Streamlit rendering crashes.
+o protobuf==3.19.6
+
+o Computer Vision & Hardware Interfacing
+o Handles raw webcam frame ingestion and Haar Cascade bounding box extraction.
+o opencv-python==4.13.0
+
+o Matrix Operations & Data Handling
+o Strict lock for stable tensor math and logging array management.
+o numpy==1.24.3,  pandas
+
+o Diagnostics & Visualization
+o Required for generating confusion matrices, training curves, and dynamic UI bar charts.
+o Matplotlib, seaborn, scikit-learn
+
+
+
+
+
+
+
+
+
+
+
+
+

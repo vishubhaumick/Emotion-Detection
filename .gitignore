@@ -1,0 +1,5 @@
+streamlit_env/
+emotion_detection/
+checkpoints_v2/
+.ipynb_checkpoints/
+__pycache__/
